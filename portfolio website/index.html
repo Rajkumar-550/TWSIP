@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta htttp-equip="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="stylesheet"href="style.css">
+    <script src="https://kit.fontawesome.com/1046f4cca5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="image/logo2.png" class="logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        </nav>
+        <div class="header-text">
+            <p>WEB DEVELOPER</p>
+            <h1>Hey,I'm <span>Rajat Chawla</span><br> From India</h1>
+        </div>
+    </div>
+
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image/person.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a front-end web developer.I can provide clean code and pixel perfect design.I also
+                    make the website more & more interactive with web animation and also planning and developing
+                    software solutions and web applications,supporting and maintaining a company's websites and digital products.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web development</span><br>Website development</li>
+                            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                            <li><span>App development</span><br>Designing interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Web Development training at Xaviar Institute</li>
+                            <li><span>2022</span><br>MBA from NIT Delhi</li>
+                            <li><span>2020</span><br>B-tech from SIT Delhi</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="services">
+    <div class="container">
+        <h1 class="'sub-title">My Services</h1>
+<div class="services-list">
+    <div>
+        <i class="fa-sharp fa-solid fa-code"></i>
+        <h2>Web Design</h2>
+        <p>Provides you with a customized website design that's perfect for your bussiness or personal site.</p>
+        <a herf="#">Learn more</a>
+    </div>
+    <div>
+        <i class="fa-brands fa-confluence"></i>
+        <h2>UI/UX Design</h2>
+        <p>Creating digital interfaces that are both visually compelling and user-friendly. </p>
+        <a herf="#">Learn more</a>
+    </div>
+    <div>
+        <i class="fa-solid fa-mug-saucer"></i>
+        <h2>App Design</h2>
+        <p>Creating user-friendly engaging interfaces for apps. </p>
+        <a herf="#">Learn more</a>
+    </div>
+</div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Profolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="image/work 1.webp">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Its means of interactions amoung people in which they create,share,and exchange
+                        information and ideas in virtual communities and networks. </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/work 2.jpg">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>An online music app that helps users to listen to their favorite songs online.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/work 3.webp">
+                <div class="layer">
+                    <h3>Browsing App</h3>
+                    <p>Takes you anywhere on the internet.It retrieves information from other parts of the web
+                        and displays it on your desktop or mobile device.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">see</a>
+    </div>
+</div>
+<div id="ccontact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-share-from-square"></i>rajatchawla2020@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9087657898</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                </div>
+                <a href="" class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name"required>
+                    <input type="email" name="email" placeholder="Your Email"required>
+                    <textarea name="Message"rows="6" placeholder="Your Massage"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Rajat. </p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+         }
+         for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+         }
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+</html>
